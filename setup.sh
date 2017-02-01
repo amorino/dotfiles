@@ -12,10 +12,9 @@ git clone https://github.com/rupa/z.git ~/code/z
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments
 
+sh .osx
+
 # symlink it up!
 ./symlink.sh
 
 chsh -s /bin/zsh
-
-defaults write com.apple.finder AppleShowAllFiles YES
-killall Finder

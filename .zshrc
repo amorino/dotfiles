@@ -15,7 +15,7 @@ $b robbyrussell/oh-my-zsh plugins/z
 $b zsh-users/zsh-syntax-highlighting
 
 # history search
-$b zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
+# $b zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
 
 # suggestions
 $b tarruda/zsh-autosuggestions
