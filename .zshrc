@@ -1,34 +1,10 @@
-source ~/code/antigen/antigen.zsh
-
-local b="antigen-bundle"
-
-# Guess what to install when running an unknown command.
-$b command-not-found
-
-# Helper for extracting different types of archives.
-$b extract
-
-# Tracks your most used directories, based on 'frecency'.
-$b robbyrussell/oh-my-zsh plugins/z
-
-# Syntax highlighting on the readline
-$b zsh-users/zsh-syntax-highlighting
-
-# history search
-# $b zsh-users/zsh-history-substring-search ./zsh-history-substring-search.zsh
-
-# suggestions
-$b tarruda/zsh-autosuggestions
-
-# colors for all files!
-# $b trapd00r/zsh-syntax-highlighting-filetypes
+source <(antibody init)
 
 # dont set a theme, because pure does it all
-$b mafredri/zsh-async
-$b sindresorhus/pure
+antibody bundle mafredri/zsh-async
+antibody bundle sindresorhus/pure
 
-# Tell antigen that you're done.
-antigen apply
+antibody bundle zsh-users/zsh-syntax-highlighting
 
 # Automatically list directory contents on `cd`.
 auto-ls () {
