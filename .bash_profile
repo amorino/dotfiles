@@ -14,3 +14,5 @@ zpath="$(brew --prefix)/etc/profile.d/z.sh"
 if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
     return 1 2> /dev/null || exit 1;
 fi;
+
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
