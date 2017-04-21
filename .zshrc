@@ -14,5 +14,14 @@ auto-ls () {
 }
 chpwd_functions=( auto-ls $chpwd_functions )
 
+export WORKON_HOME=~/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add Laravel
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+
 # Load default dotfiles
 source ~/.bash_profile

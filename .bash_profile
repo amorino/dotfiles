@@ -16,3 +16,8 @@ if [[ -n "$ZSH_VERSION" ]]; then  # quit now if in zsh
 fi;
 
 export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
+
+export PATH=/Library/Frameworks/Mono.framework/Versions/Current/bin/:${PATH}
+
+export PATH="$PATH:$HOME/.rvm/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
