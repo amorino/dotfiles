@@ -7,7 +7,7 @@
 ./yarn.sh
 
 # github.com/rupa/z   - oh how i love you
-git clone https://github.com/rupa/z.git ~/code/z
+# git clone https://github.com/rupa/z.git ~/code/z
 
 # for the c alias (syntax highlighted cat)
 sudo easy_install Pygments

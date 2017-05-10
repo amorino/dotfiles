@@ -20,10 +20,14 @@ brew install imagemagick --with-webp
 brew install node # This installs `npm` too using the recommended installation method
 brew install ffmpeg --with-libvpx
 brew install yarn
+brew install python3
 
 brew install wifi-password
 
 brew install zsh
+brew install openssl
+brew install mono
+brew install node
 
 # Remove outdated versions from the cellar
 brew cleanup
