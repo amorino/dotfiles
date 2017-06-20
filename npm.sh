@@ -133,8 +133,8 @@ main() {
 
     # Check if `npm` is installed
 
-    if ! cmd_exists 'yarn'; then
-        print_error 'yarn is required, please install it!\n'
+    if ! cmd_exists 'npm'; then
+        print_error 'npm is required, please install it!\n'
         exit 1
     fi
 
@@ -143,7 +143,7 @@ main() {
     # Install the `npm` packages
 
     for i in ${NPM_PACKAGES[@]}; do
-        execute "yarn global add $i" "$i"
+        execute "npm i -g  $i" "$i"
     done
 
 }

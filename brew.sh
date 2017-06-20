@@ -28,6 +28,7 @@ brew install zsh
 brew install openssl
 brew install mono
 brew install node
+brew install z
 
 # Remove outdated versions from the cellar
 brew cleanup

@@ -3,8 +3,8 @@
 
 # install all the things
 ./brew.sh
-./brew-cask.sh
-./yarn.sh
+# ./brew-cask.sh
+./npm.sh
 
 # github.com/rupa/z   - oh how i love you
 # git clone https://github.com/rupa/z.git ~/code/z
