@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sh ./apt.sh
+bash ./apt.sh
 
 # symlink it up!
 bash ./symlink.sh
@@ -15,5 +15,7 @@ source ~/.zshrc
 
 nvm install 8.11.1
 nvm use 8.11.1
+
+bash ./dotfiles/npm.sh
 
 # sudo shutdown -r 0
