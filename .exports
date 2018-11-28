@@ -4,7 +4,8 @@ export LANG="en_US"
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 
-export WORKON_HOME=~/.virtualenvs
+VIRTUALENVWRAPPER_PYTHON=`which python3`
+export WORKON_HOME=~/.virtualenvs   
 source /usr/local/bin/virtualenvwrapper.sh
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -13,3 +14,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -17,7 +17,6 @@ brew install wget --with-iri
 
 brew install git
 brew install imagemagick --with-webp
-brew install node # This installs `npm` too using the recommended installation method
 brew install ffmpeg --with-libvpx
 brew install yarn
 brew install python3

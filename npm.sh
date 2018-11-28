@@ -119,11 +119,9 @@ print_success() {
 
 
 declare -r -a NPM_PACKAGES=(
-	'n'
     'babel'
     'babel-eslint'
     'eslint'
-    'gulp'
     'webpack'
 )
 
