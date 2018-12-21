@@ -41,6 +41,8 @@ antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle zsh-users/zsh-completions
 antibody bundle marzocchi/zsh-notify
 antibody bundle buonomo/yarn-completion
+antibody bundle gretzky/auto-color-ls
+# antibody bundle dbkaplun/smart-cd
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
