@@ -17,7 +17,7 @@ brew install wget --with-iri
 
 brew install git
 brew install imagemagick --with-webp
-brew install ffmpeg --with-libvpx
+brew install ffmpeg --with-libvpx --with-libvorbis --with-fdk-aac --with-opus
 brew install yarn --without-node
 brew install python3
 
