@@ -5,9 +5,6 @@
 sh ./brew.sh
 
 
-# github.com/rupa/z   - oh how i love you
-# git clone https://github.com/rupa/z.git ~/code/z
-
 sh .osx
 
 # symlink it up!
@@ -15,12 +12,10 @@ sh ./symlink.sh
 
 sh ./brew-cask.sh
 
-cd ..
+cd ~
 
 # Node
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-nvm install 8.11.1
-nvm use 8.11.1
 
 # Composer
 curl -sS https://getcomposer.org/installer | php
@@ -36,3 +31,5 @@ curl -sL git.io/antibody | sh -s
 sh ./dofiles/npm.sh
 
 chsh -s /bin/zsh
+
+sh .osx
