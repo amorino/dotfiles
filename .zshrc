@@ -15,7 +15,6 @@ HISTSIZE=100000
 SAVEHIST=$HISTSIZE
 # Options
 setopt auto_cd # cd by typing directory name if it's not a command
-setopt auto_list # automatically list choices on ambiguous completion
 setopt auto_menu # automatically use menu completion
 setopt always_to_end # move cursor to end if word had one match
 setopt hist_ignore_all_dups # remove older duplicate entries from history
@@ -23,6 +22,7 @@ setopt hist_reduce_blanks # remove superfluous blanks from history items
 setopt inc_append_history # save history entries as soon as they are entered
 setopt share_history # share history between different instances
 setopt interactive_comments # allow comments in interactive shells
+setopt autocd
 
 # Improve autocompletion style
 zstyle ':completion:*' menu select # select completions with arrow keys
@@ -40,6 +40,8 @@ antibody bundle zsh-users/zsh-completions
 antibody bundle marzocchi/zsh-notify
 antibody bundle buonomo/yarn-completion
 antibody bundle gretzky/auto-color-ls
+# antibody bundle dbkaplun/smart-cd
+antibody bundle zsh-users/zsh-completions
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
