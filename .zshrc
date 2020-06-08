@@ -22,7 +22,6 @@ setopt hist_ignore_all_dups # remove older duplicate entries from history
 setopt hist_reduce_blanks # remove superfluous blanks from history items
 setopt inc_append_history # save history entries as soon as they are entered
 setopt share_history # share history between different instances
-setopt correct_all # autocorrect commands
 setopt interactive_comments # allow comments in interactive shells
 
 # Improve autocompletion style
@@ -32,9 +31,8 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate # en
 
 source <(antibody init)
 
-antibody bundle mafredri/zsh-async
-
 # Plugins
+antibody bundle mafredri/zsh-async
 antibody bundle zdharma/fast-syntax-highlighting
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-history-substring-search
@@ -42,7 +40,6 @@ antibody bundle zsh-users/zsh-completions
 antibody bundle marzocchi/zsh-notify
 antibody bundle buonomo/yarn-completion
 antibody bundle gretzky/auto-color-ls
-# antibody bundle dbkaplun/smart-cd
 
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
@@ -55,3 +52,5 @@ source /usr/local/etc/profile.d/z.sh
 
 # Load default dotfiles
 source ~/.bash_profile
+
+eval "$(pyenv init -)"

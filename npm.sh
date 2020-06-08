@@ -122,7 +122,6 @@ declare -r -a NPM_PACKAGES=(
     'babel'
     'babel-eslint'
     'eslint'
-    'webpack'
 )
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
