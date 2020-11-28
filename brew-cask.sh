@@ -21,8 +21,7 @@ brew cask install imageoptim
 
 # browsers
 brew cask install chromium
-brew cask install google-chrome firefox
-brew cask install torbrowser
+brew cask install firefox
 
 # misc
 brew cask install vlc

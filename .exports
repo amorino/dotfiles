@@ -4,12 +4,9 @@ export LANG="en_US"
 
 export PATH="/usr/local/sbin:$PATH"
 export PATH="$PATH:"/usr/local/bin/
+export PATH=$PATH:~/.local/bin
+
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
-export VIRTUALENVWRAPPER_PYTHON=`which python3`
-export WORKON_HOME=~/.virtualenvs   
-source /usr/local/bin/virtualenvwrapper.sh
-
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -29,3 +26,13 @@ export NVM_DIR="$HOME/.nvm"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/shims/python"
+
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
