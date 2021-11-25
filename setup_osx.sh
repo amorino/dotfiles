@@ -22,6 +22,9 @@ curl -sSL https://get.rvm.io | bash -s stable
 # Install antibody
 curl -sfL git.io/antibody | sh -s - -b /usr/local/bin
 
+# Install Poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+
 sh ./dotfiles/npm.sh
 
 chsh -s /bin/zsh

@@ -55,13 +55,16 @@ SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # antibody bundle denysdovhan/spaceship-prompt
-antibody bundle romkatv/powerlevel10k
+# antibody bundle romkatv/powerlevel10k
 
-# source ~/z.sh
-source /usr/local/etc/profile.d/z.sh
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+# # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(starship init zsh)"
 
 # Load default dotfiles
 source ~/.bash_profile
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
