@@ -20,11 +20,12 @@ brew install git-lfs
 brew install imagemagick --with-webp
 brew install ffmpeg
 brew install yarn
-brew install python3
 brew install redis
 brew install zlib
 brew install postgres
 brew install facebook/fb/idb-companion
+brew install ruby-install chruby
+brew install terminal-notifier
 
 brew install wifi-password
 
@@ -34,7 +35,6 @@ brew install mono
 brew install z
 brew install pyenv
 brew install pyenv-virtualenv
-brew install n
 brew install carthage
 brew install starship
 

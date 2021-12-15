@@ -1,3 +1,8 @@
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the start of this file.
+[ -s ~/.fig/shell/pre.sh ] && source ~/.fig/shell/pre.sh
+#### END FIG ENV VARIABLES ####
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -49,12 +54,6 @@ antibody bundle buonomo/yarn-completion
 antibody bundle gretzky/auto-color-ls
 # antibody bundle dbkaplun/smart-cd
 antibody bundle zsh-users/zsh-completions
-
-SPACESHIP_PROMPT_ADD_NEWLINE=false
-SPACESHIP_CHAR_SYMBOL="❯"
-SPACESHIP_CHAR_SUFFIX=" "
-
-# antibody bundle denysdovhan/spaceship-prompt
 # antibody bundle romkatv/powerlevel10k
 
 eval "$(pyenv init --path)"
@@ -66,5 +65,14 @@ eval "$(pyenv virtualenv-init -)"
 
 eval "$(starship init zsh)"
 
+source /usr/local/opt/chruby/share/chruby/chruby.sh
+source /usr/local/opt/chruby/share/chruby/auto.sh
+chruby ruby-2.6.9
+
 # Load default dotfiles
 source ~/.bash_profile
+
+#### FIG ENV VARIABLES ####
+# Please make sure this block is at the end of this file.
+[ -s ~/.fig/fig.sh ] && source ~/.fig/fig.sh
+#### END FIG ENV VARIABLES ####

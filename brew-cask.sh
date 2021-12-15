@@ -9,8 +9,6 @@ brew tap caskroom/cask
 
 # utils
 brew cask install spectacle
-brew cask install dropbox
-brew cask install alfred
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzipql qlimagesize webpquicklook suspicious-package
 brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
