@@ -26,6 +26,7 @@ brew 'pyenv'
 brew 'pyenv-virtualenv'
 brew 'carthage'
 brew 'starship'
+brew 'z'
 
 # Casks
 cask 'adoptopenjdk/openjdk/adoptopenjdk8'
