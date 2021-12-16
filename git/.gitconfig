@@ -1,8 +1,5 @@
 [include]
   path = ~/.gitconfig.local
-[user]
-	name = Erick Bazán
-	email = erick.bazan@me.com
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
