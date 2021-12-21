@@ -39,6 +39,7 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate # en
 source <(antibody init)
 
 # Plugins
+antibody bundle zdharma-continuum/fast-syntax-highlighting
 antibody bundle mafredri/zsh-async
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-history-substring-search
@@ -55,6 +56,9 @@ antibody bundle zsh-users/zsh-completions
 # # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# chruby
+source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
+chruby ruby-2.6.9
 eval "$(starship init zsh)"
 
 # z beats cd most of the time. `brew install z`
