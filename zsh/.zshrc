@@ -40,29 +40,26 @@ source <(antibody init)
 
 # Plugins
 antibody bundle mafredri/zsh-async
-antibody bundle zdharma/fast-syntax-highlighting
 antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle zsh-users/zsh-completions
 antibody bundle marzocchi/zsh-notify
-antibody bundle buonomo/yarn-completion
 antibody bundle gretzky/auto-color-ls
-# antibody bundle dbkaplun/smart-cd
 antibody bundle zsh-users/zsh-completions
 # antibody bundle romkatv/powerlevel10k
 
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv init --path)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 # # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 eval "$(starship init zsh)"
 
-source /usr/local/opt/chruby/share/chruby/chruby.sh
-source /usr/local/opt/chruby/share/chruby/auto.sh
-chruby ruby-2.6.9
+# z beats cd most of the time. `brew install z`
+zpath="$(brew --prefix)/etc/profile.d/z.sh"
+[ -s $zpath ] && source $zpath
 
 # Load our dotfiles like ~/.bash_prompt, etc…
 # ~/.extra can be used for settings you don’t want to commit,
@@ -71,7 +68,3 @@ for file in ~/.{bash_prompt,extra,exports,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
-
-# z beats cd most of the time. `brew install z`
-zpath="$(brew --prefix)/etc/profile.d/z.sh"
-[ -s $zpath ] && source $zpath

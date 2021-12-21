@@ -15,19 +15,14 @@ print -P "%SInstalling packages from brew%s\n"
 
 brew bundle --no-upgrade
 
-if (( $+commands[antibody] )); then
-    print -P "%F{yellow}antibody already installed%f\n"
-else
-    print -P "%F{green}Installing antibody%f\n"
-    ruby -e "$(curl -sfL git.io/antibody | sh -s - -b /usr/local/bin)"
-fi
+print -P "\n"
 
-
-if (( $+commands[poetry] )); then
-    print -P "%F{yellow}Poetry already installed%f\n"
+if [ -d ~/.zplugin/bin ]; then
+    print -P "%F{yellow}Zplugin already installed%f\n"
 else
-    print -P "%F{green}Installing Poeatry%f\n"
-    ruby -e "$(curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python)"
+    print -P "%F{green}Installing zplugin%f\n"
+    mkdir ~/.zplugin
+    git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
 fi
 
 print -P "%SAdding symlinks for dotfiles%s\n"
@@ -42,4 +37,4 @@ print -P "%SZSH as default %s\n"
 chsh -s /bin/zsh
 
 print -P "%SOSX configs%s\n"
-sh ./dotfiles/.osx
+sh ~/dotfiles/.osx
