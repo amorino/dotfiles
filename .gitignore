@@ -17,5 +17,5 @@ Thumbs.db
 .Trashes
 
 # extras
-**/extra*
-**/exports*
+**/.extra*
+**/.exports*
