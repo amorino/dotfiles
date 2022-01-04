@@ -4,11 +4,9 @@ dotfiles=(bash zsh git)
 
 print -P "%SRunning bootstrap script%s\n"
 
-if (( $+commands[brew] )); then
-    print -P "%F{yellow}Brew already installed%f\n"
-else
-    print -P "%F{green}Installing brew%f\n"
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if ! (( $+commands[brew] )); then
+    print -P "%F{red}Brew not installed%f\n"
+    exit 0
 fi
 
 print -P "%SInstalling packages from brew%s\n"
@@ -16,14 +14,6 @@ print -P "%SInstalling packages from brew%s\n"
 brew bundle --no-upgrade
 
 print -P "\n"
-
-if [ -d ~/.zplugin/bin ]; then
-    print -P "%F{yellow}Zplugin already installed%f\n"
-else
-    print -P "%F{green}Installing zplugin%f\n"
-    mkdir ~/.zplugin
-    git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
-fi
 
 print -P "%SAdding symlinks for dotfiles%s\n"
 

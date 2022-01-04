@@ -45,20 +45,11 @@ antibody bundle zsh-users/zsh-autosuggestions
 antibody bundle zsh-users/zsh-history-substring-search
 antibody bundle zsh-users/zsh-completions
 antibody bundle marzocchi/zsh-notify
-antibody bundle gretzky/auto-color-ls
-antibody bundle zsh-users/zsh-completions
 # antibody bundle romkatv/powerlevel10k
-
-# eval "$(pyenv init --path)"
-# eval "$(pyenv init -)"
-# eval "$(pyenv virtualenv-init -)"
 
 # # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 # [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# chruby
-source /opt/homebrew/opt/chruby/share/chruby/chruby.sh
-chruby ruby-2.6.9
 eval "$(starship init zsh)"
 
 # z beats cd most of the time. `brew install z`
@@ -68,7 +59,7 @@ zpath="$(brew --prefix)/etc/profile.d/z.sh"
 # Load our dotfiles like ~/.bash_prompt, etc…
 # ~/.extra can be used for settings you don’t want to commit,
 # Use it to configure your PATH, thus it being first in line.
-for file in ~/.{bash_prompt,extra,exports,aliases,functions}; do
+for file in ~/.{bash_prompt,default_exports,exports,aliases,functions}; do
     [ -r "$file" ] && source "$file"
 done
 unset file
