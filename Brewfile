@@ -3,6 +3,7 @@ cask_args appdir: "/Applications"
 
 # Install packages
 tap "homebrew/cask" || true
+brew "coreutils"
 brew "stow"
 brew "git"
 brew "git-lfs"
