@@ -71,7 +71,6 @@ alias diskspace_report="df -P -kHl"
 alias free_diskspace_report="diskspace_report"
 
 # Shortcuts
-alias g="git"
 alias v="vim"
 alias ungz="gunzip -k"
 
