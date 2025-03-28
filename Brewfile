@@ -2,7 +2,6 @@
 cask_args appdir: "/Applications"
 
 # Install packages
-tap "homebrew/cask" || true
 brew "coreutils"
 brew "stow"
 brew "git"
@@ -16,7 +15,6 @@ brew "antidote"
 
 # Casks
 cask "iterm2"
-cask "visual-studio-code"
 cask "imagealpha"
 cask "imageoptim"
 cask "firefox"
