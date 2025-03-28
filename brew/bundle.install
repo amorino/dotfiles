@@ -1,9 +1,10 @@
-#!/bin/sh
-if ! (( $+commands[brew] )); then
-    echo "- Brew not installed"
-    exit 0
+#!/bin/zsh
+if command -v brew &>/dev/null
+then
+  echo "- Installing packages from brew"
+
+  brew bundle --no-upgrade
+else
+  echo "- Brew not installed"
+  exit 0
 fi
-
-echo "- Installing packages from brew"
-
-brew bundle --no-upgrade
