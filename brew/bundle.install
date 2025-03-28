@@ -2,8 +2,7 @@
 if command -v brew &>/dev/null
 then
   echo "- Installing packages from brew"
-
-  brew bundle --no-upgrade
+  brew bundle --no-upgrade --file=~/.dotfiles/brew/Brewfile
 else
   echo "- Brew not installed"
   exit 0
