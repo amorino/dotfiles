@@ -1,6 +1,6 @@
 #!/bin/zsh
 dir=$(pwd -P)
-dotfiles=(bash zsh git)
+dotfiles=(bash zsh git tmux)
 
 print -P "%SAdding symlinks for dotfiles%s\n"
 
