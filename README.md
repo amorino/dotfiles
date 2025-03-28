@@ -1,3 +1,5 @@
 # Erick Bazán's Dotfiles
 
-Run `./bootstrap.sh` to begin the process.
+## Installation
+Clone it into `~` as `.dotfiles`
+Run `make`
