@@ -10,3 +10,9 @@
 [user]
 	name = Erick Bazán
 	email = erick.bazan@hey.com
+[gpg]
+    format = ssh
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+    gpgsign = true
