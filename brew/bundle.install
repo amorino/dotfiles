@@ -1,0 +1,9 @@
+#!/bin/zsh
+if ! (( $+commands[brew] )); then
+    print -P "%F{red}Brew not installed%f\n"
+    exit 0
+fi
+
+print -P "%SInstalling packages from brew%s\n"
+
+brew bundle --no-upgrade

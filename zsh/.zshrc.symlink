@@ -31,7 +31,7 @@ zstyle ':completion:::::' completer _expand _complete _ignored _approximate # en
 
 source /opt/homebrew/opt/antidote/share/antidote/antidote.zsh
 
-antidote bundle <~/.zsh_plugins.txt >~/.zsh_plugins.zsh
+antidote bundle <~/.zsh_plugins >~/.zsh_plugins.zsh
 source ~/.zsh_plugins.zsh
 
 eval "$(starship init zsh)"
