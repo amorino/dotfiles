@@ -20,3 +20,6 @@ Thumbs.db
 **/.extra*
 **/.exports*
 .idea
+
+# Fish
+fish/config/fish_variables
