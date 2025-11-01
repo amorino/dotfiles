@@ -37,4 +37,12 @@ set -x ANDROID_HOME $ANDROID/sdk;
 fish_add_path  $ANDROID_HOME/emulator  $ANDROID_HOME/platform-tools $ANDROID_HOME/tools/bin $ANDROID_HOME/tools
 
 # Java
-set -x JAVA_HOME /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
+# set -x JAVA_HOME /Library/Java/JavaVirtualMachines/openjdk-17.jdk/Contents/Home
+set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+# React
+set -gx REACT_EDITOR pycharm
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
