@@ -60,7 +60,7 @@ defaults write com.apple.dock autohide-time-modifier -float 0
 defaults write com.apple.dock autohide -bool true
 
 # Make Dock icons of hidden applications translucent
-defaults write com.apple.dock showhidden -bool true
+defaults write com.apple.dock showhidden -bool false
 
 # Set the icon size to 72 points
 defaults write com.apple.dock tilesize -int 72
