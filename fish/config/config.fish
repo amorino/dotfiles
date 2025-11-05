@@ -1,16 +1,23 @@
 # Abbreviations
 source ~/.config/fish/abbreviations.fish
 
+# Aliases
+source ~/.config/fish/aliases.fish
+
 # Locale
 set -x LANGUAGE "en_US.UTF-8"
 set -x LC_ALL "en_US.UTF-8"
 set -x LANG "en_US.UTF-8"
+
+# GPG
+set -x GPG_TTY (tty)
 
 # Starship
 starship init fish | source
 
 # Homebrew
 set -x HOMEBREW_NO_ANALYTICS 1
+set -x HOMEBREW_CASK_OPTS "--appdir=/Applications"
 
 function fish_greeting
     clear
