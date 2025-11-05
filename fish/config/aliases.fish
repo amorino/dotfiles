@@ -4,8 +4,6 @@ alias cd..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~"
-alias -- -="cd -"
 
 # mv, rm, cp
 alias mv='mv -v'
