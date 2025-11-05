@@ -1,21 +1,20 @@
 add_newline = false
 format = """
 $character$directory$git_branch$git_status ${custom.separator}"""
-right_format = """${custom.swift}"""
 
 [character]
 error_symbol = "[􀇿 ](bold fg:#FFCC00)"
-success_symbol = "[􀒆 ](bold)"
+success_symbol = "[􀒆 ](bold fg:#f9e2af)"
 
 [directory]
 format = "[$path]($style)[$read_only]($read_only_style)"
-style = "bold"
+style = "bold fg:#b4befe"
 truncate_to_repo = false
 truncation_length = 2
 
 [git_branch]
 format = " at [$branch(:$remote_branch)]($style)"
-style = "bold"
+style = "bold fg:#cba6f7"
 truncation_length = 20
 
 [git_status]
@@ -37,11 +36,3 @@ description = "A custom separator, indicating the style of the repo"
 format = "[($output  )]($style)"
 style = "bold"
 when = true
-
-[custom.swift]
-description = "Current directory contains a Swift Project"
-detect_extensions = ["swift", "xcodeproj"]
-format = " [$symbol]($style)"
-style = "fg:#bf5700"
-symbol = "􀫊 "
-when = "[ -n \"$(find . -maxdepth 1 -type d -name '*.xcodeproj' 2>/dev/null)\" ] || exit 1"
