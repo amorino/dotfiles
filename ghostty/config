@@ -1,0 +1,41 @@
+theme = Catppuccin Mocha
+
+adjust-cell-height = 10
+adjust-cell-width = 0%
+adjust-cursor-height = -2
+cursor-style = bar
+
+# Font settings
+font-family = SF Mono
+font-family = SF Pro
+font-size = 16
+font-feature = -ss03,+ss04
+font-style = Regular
+font-style-bold = Bold
+font-style-bold-italic = "Medium Italic"
+
+# font-family = Berkeley Mono Trial
+# font-size = 16
+# font-style = Retina
+# font-style-bold = "Bold"
+# font-style-bold-italic = "Bold Oblique"
+# font-style-italic = "Retina Oblique"
+# font-synthetic-style = ""
+# font-variation-italic = "slnt=-4"
+
+macos-option-as-alt = false
+macos-titlebar-style = tabs
+
+quick-terminal-animation-duration = 0
+quick-terminal-position = center
+quick-terminal-screen = macos-menu-bar
+quick-terminal-size = 66%,66%
+
+shell-integration = fish
+
+window-colorspace = display-p3
+window-decoration = auto
+window-padding-x = 12
+window-padding-y = 8
+
+keybind = shift+enter=text:\n
