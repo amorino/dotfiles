@@ -1,15 +1,116 @@
+[advice]
+	statusHints = false
+	addEmptyPathspec = false
+
+[alias]
+	cl        = clone --recursive
+	co        = checkout --quiet
+	g         = !exec git
+	git       = !exec git
+	subup     = submodule update --recursive --init
+
+[branch]
+	autosetupmerge = true
+	sort           = -authordate
+
+[branch "main"]
+	merge  = refs/heads/main
+	remote = origin
+
+[branch "master"]
+	merge  = refs/heads/master
+	remote = origin
+
+[color]
+	branch = auto
+	diff   = auto
+	status = auto
+	ui     = true
+
+[color "branch"]
+	current = green bold
+	local   = normal
+	remote  = red italic
+	upsteam = yellow
+
+[color "diff"]
+	frag       = magenta bold
+	meta       = yellow bold
+	new        = green bold
+	old        = red italic
+	whitespace = red reverse
+
+[color "status"]
+	added     = green
+	changed   = red bold
+	unmerged  = red
+	untracked = blue
+
+[column]
+	status = auto,row,nodense
+	ui     = auto,row,nodense
+
+[core]
+	attributesfile = ~/.gitattributes
+	excludesfile   = ~/.gitignore
+	trustctime     = false
+	whitespace     = trailing-space,space-before-tab
+
+[credential]
+	helper = osxkeychain
+
+[diff]
+	algorithm        = histogram
+	renames          = copies
+	wsErrorHighlight = all
+
+[difftool]
+	prompt = false
+
+[grep]
+	extendRegexp = true
+	lineNumber   = true
+
+[help]
+	autocorrect = 10
+
 [include]
 	path = ~/.gitconfig.local
+
 [filter "lfs"]
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
 	clean = git-lfs clean -- %f
+
 [init]
 	defaultBranch = main
+
+[log]
+	abbrevCommit = true
+	decorate     = auto
+
+[mergetool]
+	prompt = false
+
+[pull]
+	ff = only
+
+[push]
+	default = current
+
+[rerere]
+	enabled = true
+
+[status]
+	showUntrackedFiles = all
+	submoduleSummary   = true
+
 [gpg]
-    format = ssh
+	format = ssh
+
 [gpg "ssh"]
     program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
 [commit]
     gpgsign = true
