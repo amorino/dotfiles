@@ -1,4 +1,4 @@
-theme = Catppuccin Mocha
+theme = Monokai Pro Light
 
 adjust-cell-height = 10
 adjust-cell-width = 0%
@@ -6,10 +6,9 @@ adjust-cursor-height = -2
 cursor-style = bar
 
 # Font settings
-font-family = SF Mono
-font-family = SF Pro
+font-family = JetBrains Mono
 font-size = 16
-font-feature = -ss03,+ss04
+font-feature = +ss01,+zero
 font-style = Regular
 font-style-bold = Bold
 font-style-bold-italic = "Medium Italic"

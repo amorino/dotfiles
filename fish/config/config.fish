@@ -4,6 +4,9 @@ source ~/.config/fish/abbreviations.fish
 # Aliases
 source ~/.config/fish/aliases.fish
 
+# 1Password
+source ~/.config/op/plugins.sh
+
 # Locale
 set -x LANGUAGE "en_US.UTF-8"
 set -x LC_ALL "en_US.UTF-8"
@@ -48,7 +51,7 @@ fish_add_path  $ANDROID_HOME/emulator  $ANDROID_HOME/platform-tools $ANDROID_HOM
 set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # React
-set -gx REACT_EDITOR pycharm
+set -gx REACT_EDITOR cursor
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
