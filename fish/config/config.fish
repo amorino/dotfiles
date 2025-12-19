@@ -17,6 +17,7 @@ set -x GPG_TTY (tty)
 
 # Starship
 starship init fish | source
+direnv hook fish | source
 
 # Homebrew
 set -x HOMEBREW_NO_ANALYTICS 1
@@ -40,6 +41,9 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 
 # JetBrains
 fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
+# Local bin
+fish_add_path "$HOME/.local/bin"
 
 # Android
 set -x ANDROID $HOME/Library/Android;
