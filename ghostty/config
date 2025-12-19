@@ -67,6 +67,8 @@ font-variation-bold-italic = slnt=-4
 font-variation-bold-italic = wdth=100
 font-variation-bold-italic = wght=375
 
+font-synthetic-style = false
+
 macos-option-as-alt = false
 macos-titlebar-style = tabs
 
