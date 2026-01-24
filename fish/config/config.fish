@@ -1,16 +1,26 @@
 # Abbreviations
 source ~/.config/fish/abbreviations.fish
 
+# Aliases
+source ~/.config/fish/aliases.fish
+
+# 1Password
+source ~/.config/op/plugins.sh
+
 # Locale
 set -x LANGUAGE "en_US.UTF-8"
 set -x LC_ALL "en_US.UTF-8"
 set -x LANG "en_US.UTF-8"
+
+# GPG
+set -x GPG_TTY (tty)
 
 # Starship
 starship init fish | source
 
 # Homebrew
 set -x HOMEBREW_NO_ANALYTICS 1
+set -x HOMEBREW_CASK_OPTS "--appdir=/Applications"
 
 function fish_greeting
     clear
@@ -31,6 +41,9 @@ set -gx PATH "$VOLTA_HOME/bin" $PATH
 # JetBrains
 fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
+# Local bin
+fish_add_path "$HOME/.local/bin"
+
 # Android
 set -x ANDROID $HOME/Library/Android;
 set -x ANDROID_HOME $ANDROID/sdk;
@@ -41,8 +54,10 @@ fish_add_path  $ANDROID_HOME/emulator  $ANDROID_HOME/platform-tools $ANDROID_HOM
 set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # React
-set -gx REACT_EDITOR pycharm
+set -gx REACT_EDITOR cursor
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+direnv hook fish | source

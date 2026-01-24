@@ -34,3 +34,10 @@ xcuserdata
 .build
 
 contents.xcworkspacedata
+
+# Claude Code
+.claude
+CLAUDE.md
+
+# Direnv
+.envrc

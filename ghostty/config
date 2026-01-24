@@ -1,0 +1,86 @@
+# theme = light:Monokai Pro Light,dark:Monokai Pro Ristretto
+theme = Monokai Pro Light
+
+adjust-cell-height = 10
+cursor-style = bar
+
+# Font settings
+font-family = Berkeley Mono Variable
+font-size = 16
+# Font slant (0 to -16)
+#   0 = Regular
+# -16 = Oblique
+font-variation = slnt=0
+
+# Font width (60 to 100)
+#  60 = UltraCondensed
+#  70 = ExtraCondensed
+#  80 = Condensed
+#  90 = SemiCondensed
+# 100 = Normal
+font-variation = wdth=90
+
+# Font weight (100 to 900)
+# 100 = Thin
+# 200 = ExtraLight
+# 300 = Light
+# 350 = SemiLight
+# 375 = Retina
+# 400 = Regular
+# 425 = Book
+# 500 = Medium
+# 600 = SemiBold
+# 700 = Bold
+# 800 = ExtraBold
+# 900 = Black
+font-variation = wght=375
+
+# aalt    Access All Alternates
+# calt    Contextual Alternates
+# ccmp    Glyph Composition/Decomposition
+# mark    Mark Positioning
+# mkmk    Mark to Mark Positioning
+# salt    Stylistic Alternates
+# ss01    Stylistic Set 1 <- slashed 0
+# ss02    Stylistic Set 2 <- dotted 0
+# ss03    Stylistic Set 3 <- gap 0
+# ss04    Stylistic Set 4 <- slash 7
+# ss05    Stylistic Set 5 <- glyph r
+# ss06    Stylistic Set 6 <- alternate pipe
+font-feature = +calt,+ss02,+ss05,
+
+font-synthetic-style = ""
+
+# Bold variation
+font-variation-bold = slnt=0
+font-variation-bold = wdth=100
+font-variation-bold = wght=700
+
+# Italic variation
+font-variation-italic = slnt=-4
+font-variation-italic = wdth=100
+font-variation-italic = wght=375
+
+# Bold Italic variation
+font-variation-bold-italic = slnt=-4
+font-variation-bold-italic = wdth=100
+font-variation-bold-italic = wght=375
+
+font-synthetic-style = false
+
+macos-option-as-alt = false
+macos-titlebar-style = tabs
+
+quick-terminal-animation-duration = 0
+quick-terminal-position = center
+quick-terminal-screen = macos-menu-bar
+quick-terminal-size = 66%,66%
+
+shell-integration = fish
+
+window-colorspace = display-p3
+window-decoration = auto
+window-padding-x = 12
+window-padding-y = 8
+
+keybind = shift+enter=text:\n
