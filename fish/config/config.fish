@@ -17,7 +17,6 @@ set -x GPG_TTY (tty)
 
 # Starship
 starship init fish | source
-direnv hook fish | source
 
 # Homebrew
 set -x HOMEBREW_NO_ANALYTICS 1
@@ -60,3 +59,5 @@ set -gx REACT_EDITOR cursor
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+direnv hook fish | source

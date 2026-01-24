@@ -1,8 +1,7 @@
+# theme = light:Monokai Pro Light,dark:Monokai Pro Ristretto
 theme = Monokai Pro Light
 
 adjust-cell-height = 10
-adjust-cell-width = 0%
-adjust-cursor-height = -2
 cursor-style = bar
 
 # Font settings
@@ -45,17 +44,17 @@ font-variation = wght=375
 # ss01    Stylistic Set 1 <- slashed 0
 # ss02    Stylistic Set 2 <- dotted 0
 # ss03    Stylistic Set 3 <- gap 0
-# ss04    Stylistic Set 4 <- slashed 0, slash 7
-# ss05    Stylistic Set 5 <- dotted 0, slash 7
-# ss06    Stylistic Set 6 <- gap 0, slash 7
-font-feature = +calt,+ss02,+ss04
+# ss04    Stylistic Set 4 <- slash 7
+# ss05    Stylistic Set 5 <- glyph r
+# ss06    Stylistic Set 6 <- alternate pipe
+font-feature = +calt,+ss02,+ss05,
 
 font-synthetic-style = ""
 
 # Bold variation
 font-variation-bold = slnt=0
 font-variation-bold = wdth=100
-font-variation-bold = wght=600
+font-variation-bold = wght=700
 
 # Italic variation
 font-variation-italic = slnt=-4
