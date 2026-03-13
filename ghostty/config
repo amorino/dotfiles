@@ -1,12 +1,13 @@
 # theme = light:Monokai Pro Light,dark:Monokai Pro Ristretto
-theme = Monokai Pro Light
+# theme = Catppuccin Mocha
+theme = Catppuccin Latte
 
 adjust-cell-height = 10
 cursor-style = bar
 
 # Font settings
 font-family = Berkeley Mono Variable
-font-size = 16
+font-size = 18
 # Font slant (0 to -16)
 #   0 = Regular
 # -16 = Oblique
