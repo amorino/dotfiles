@@ -34,10 +34,6 @@ if test -d /usr/local/sbin
     fish_add_path "/usr/local/sbin"
 end
 
-# Volta
-set -gx VOLTA_HOME "$HOME/.volta"
-set -gx PATH "$VOLTA_HOME/bin" $PATH
-
 # JetBrains
 fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
@@ -55,6 +51,7 @@ set -x JAVA_HOME /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
 
 # React
 set -gx REACT_EDITOR cursor
+set -gx EXPO_EDITOR "cursor"
 
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
