@@ -1,0 +1,7 @@
+#!/bin/sh
+
+echo "- Linking ~/.config/gh/config.yml"
+
+mkdir -p ~/.config/gh
+
+ln -sF ~/.dotfiles/gh/config.yml ~/.config/gh/config.yml

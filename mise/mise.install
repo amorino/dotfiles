@@ -1,0 +1,8 @@
+#!/bin/sh
+
+echo "- Linking ~/.config/mise"
+
+mkdir -p ~/.config
+rm -rf ~/.config/mise
+
+ln -sF ~/.dotfiles/mise ~/.config/mise
