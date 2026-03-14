@@ -41,6 +41,8 @@ brew "uv"
 brew "watchman"
 brew "wget"
 brew "z"
+brew "eza"
+brew "bat"
 brew "xcbeautify"
 brew "xcode-build-server"
 
