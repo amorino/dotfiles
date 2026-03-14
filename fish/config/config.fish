@@ -34,9 +34,6 @@ if test -d /usr/local/sbin
     fish_add_path "/usr/local/sbin"
 end
 
-# JetBrains
-fish_add_path "$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
-
 # Local bin
 fish_add_path "$HOME/.local/bin"
 
@@ -54,7 +51,10 @@ set -gx REACT_EDITOR cursor
 set -gx EXPO_EDITOR "cursor"
 
 # bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+set -gx BUN_INSTALL "$HOME/.bun"
+fish_add_path "$BUN_INSTALL/bin"
+
+# mise
+mise activate fish | source
 
 direnv hook fish | source

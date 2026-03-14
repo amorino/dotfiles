@@ -12,12 +12,9 @@ alias cp='cp -v'
 
 alias chmox='chmod -x'
 
-alias cask='brew cask'
 alias where=which
 
 alias hosts='sudo $EDITOR /etc/hosts'
-
-alias ag='ag -f --hidden'
 
 # ls with eza (modern replacement for ls)
 if type -q eza
@@ -40,7 +37,6 @@ end
 
 # Git aliases
 alias push="git push"
-alias undopush="git push -f origin HEAD^:master"
 alias master="git checkout master"
 
 # git root - cd to root of git repo
@@ -73,7 +69,6 @@ end
 
 # Networking
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
-alias wget="curl -O"
 
 # Cleanup
 alias cleanup_dsstore="find . -name '*.DS_Store' -type f -ls -delete"
