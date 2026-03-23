@@ -1,0 +1,11 @@
+#!/bin/sh
+
+THEMES_DIR="$HOME/Library/Developer/Xcode/UserData/FontAndColorThemes"
+
+echo "- Linking Xcode themes"
+
+mkdir -p "$THEMES_DIR"
+
+for theme in ~/.dotfiles/xcode/FontAndColorThemes/*.xccolortheme; do
+  ln -sf "$theme" "$THEMES_DIR/$(basename "$theme")"
+done
