@@ -1,0 +1,69 @@
+{
+  // Workbench
+  "workbench.preferredLightColorTheme": "Catppuccin Latte",
+  "workbench.preferredDarkColorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "catppuccin-latte",
+  // Editor
+  "editor.fontFamily": "Berkeley Mono Variable, SF Pro, Menlo, Monaco, monospace",
+  "editor.fontVariations": "'wght' 375, 'wdth' 90",
+  "editor.fontSize": 16,
+  "editor.lineHeight": 1.6,
+  "editor.fontLigatures": "'ss02', 'calt', 'ss05'",
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnSave": true,
+  "editor.minimap.autohide": true,
+  "editor.minimap.enabled": true,
+  // Theme
+  "catppuccin.italicKeywords": false,
+  "catppuccin.italicComments": false,
+  "catppuccin.accentColor": "mauve",
+  "catppuccin.colorOverrides": {
+    "latte": {
+      "pink": "#7287fd",
+    },
+  },
+  "catppuccin.workbenchMode": "flat",
+  // "editor.tokenColorCustomizations": {
+  //   "[Catppuccin Latte]": {
+  //     "textMateRules": [
+  //       {
+  //         "scope": [
+  //           "support.class.component.tsx",
+  //           "support.class.component.jsx",
+  //           "entity.name.tag.tsx",
+  //           "entity.name.tag.jsx"
+  //         ],
+  //         "settings": {
+  //           "foreground": "#7287fd"
+  //         }
+  //       }
+  //     ]
+  //   }
+  // },
+  // Language specific
+  "[swift]": {
+    "editor.defaultFormatter": "sweetpad.sweetpad",
+  },
+  // "[typescript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features",
+  // },
+  // "[typescriptreact]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // },
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // },
+  // Window
+  "window.autoDetectColorScheme": true,
+  // Git
+  "git.autofetch": true,
+  // Terminal
+  "terminal.integrated.fontLigatures.enabled": true,
+  "terminal.integrated.fontSize": 14,
+  // Claude Code
+  "claudeCode.preferredLocation": "panel",
+  // Cursor
+  "cursor.composer.shouldChimeAfterChatFinishes": true,
+  "cursor.cpp.disabledLanguages": [],
+  "remote.autoForwardPortsSource": "hybrid",
+}
