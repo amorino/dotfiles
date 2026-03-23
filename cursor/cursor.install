@@ -1,0 +1,10 @@
+#!/bin/sh
+
+CURSOR_DIR="$HOME/Library/Application Support/Cursor/User"
+
+echo "- Linking Cursor settings"
+
+mkdir -p "$CURSOR_DIR"
+
+ln -sf ~/.dotfiles/cursor/settings.json "$CURSOR_DIR/settings.json"
+ln -sf ~/.dotfiles/cursor/keybindings.json "$CURSOR_DIR/keybindings.json"
