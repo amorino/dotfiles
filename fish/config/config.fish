@@ -5,7 +5,7 @@ source ~/.config/fish/abbreviations.fish
 source ~/.config/fish/aliases.fish
 
 # 1Password
-source ~/.config/op/plugins.sh
+test -f ~/.config/op/plugins.sh; and source ~/.config/op/plugins.sh
 
 # Locale
 set -x LANGUAGE "en_US.UTF-8"
