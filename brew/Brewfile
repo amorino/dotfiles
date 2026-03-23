@@ -5,7 +5,6 @@ cask_args appdir: "/Applications"
 tap "tw93/tap"
 tap "heroku/brew"
 tap "pointfreeco/tap"
-tap "qmk/qmk"
 
 # Install packages
 brew "coreutils"
