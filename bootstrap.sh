@@ -18,11 +18,15 @@ fi
 if [ ! -d "/Applications/Xcode.app" ]; then
   echo "⚠ Full Xcode.app not found."
   echo "  Some formulas (swiftlint, swift-format) require it."
-  echo "  Install from the App Store, then run:"
-  echo "    sudo xcode-select -s /Applications/Xcode.app/Contents/Developer"
-  echo ""
-  read -q "REPLY?Continue without full Xcode? [y/N] " || exit 1
-  echo ""
+  echo "  Install from the App Store, then re-run this script."
+  exit 1
+fi
+
+# Point developer tools to full Xcode (not just CLI tools)
+XCODE_DEV="/Applications/Xcode.app/Contents/Developer"
+if [ "$(xcode-select -p)" != "$XCODE_DEV" ]; then
+  echo "- Switching developer tools to Xcode.app (requires sudo)"
+  sudo xcode-select -s "$XCODE_DEV"
 fi
 
 # 2. Check for 1Password SSH agent
